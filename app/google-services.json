@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "563752909910",
+    "firebase_url": "https://allstar-a831e.firebaseio.com",
+    "project_id": "allstar-a831e",
+    "storage_bucket": "allstar-a831e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563752909910:android:e5926c7d6a0d892e",
+        "android_client_info": {
+          "package_name": "com.example.cuma.allstaryou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563752909910-pli2uirofvqt7f1vsfguiod9ev20drgr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuma.allstaryou",
+            "certificate_hash": "fd55533db0a243f17cbe77f7fd44a2279b6df6f6"
+          }
+        },
+        {
+          "client_id": "563752909910-ae6e5bde3dv1o6cf20m96b1o5n4ed7ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZOEi_ajg_dpLFGFBfjOQpPRqw8t6fnKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563752909910-ae6e5bde3dv1o6cf20m96b1o5n4ed7ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
