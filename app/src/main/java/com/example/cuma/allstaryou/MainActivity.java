@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
     }
-
+/*değişik*/
     @Override
     protected void onStart() {
         super.onStart();
