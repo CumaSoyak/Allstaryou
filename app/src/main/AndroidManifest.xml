@@ -19,8 +19,12 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_welcome"
-
-            tools:ignore="DuplicateActivity"></activity>
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".anasayfa"
+            android:label="@string/title_activity_anasayfa"></activity>
     </application>
 
 </manifest>
