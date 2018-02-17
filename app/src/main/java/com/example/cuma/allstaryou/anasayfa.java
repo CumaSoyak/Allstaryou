@@ -30,6 +30,7 @@ public class anasayfa extends AppCompatActivity {
             return false;
         }
     };
+    /*Buralar*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
