@@ -30,7 +30,7 @@ public class anasayfa extends AppCompatActivity {
             return false;
         }
     };
-    /*Buralar*/
+    /*Buralar yapılacak*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
