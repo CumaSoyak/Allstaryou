@@ -53,7 +53,7 @@ public class Register extends AppCompatActivity {
 
                         if (task.isSuccessful()){
 
-                            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                            Intent intent=new Intent(getApplicationContext(),anasayfa.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),"Kulanıcı oluşturuldu",Toast.LENGTH_SHORT).show();
                         }
