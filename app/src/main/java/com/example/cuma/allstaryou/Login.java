@@ -1,5 +1,6 @@
 package com.example.cuma.allstaryou;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private ProgressDialog progressDialog;
 
     EditText emailText;
     EditText parolaText;
@@ -30,6 +32,8 @@ public class Login extends AppCompatActivity {
         parolaText=(EditText) findViewById(R.id.parolatext);
 
         mAuth =FirebaseAuth.getInstance();
+
+        progressDialog=new ProgressDialog(this);
 
         mAuthListener=new FirebaseAuth.AuthStateListener() {
             @Override
@@ -61,6 +65,8 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Intent intent=new Intent(getApplicationContext(),anasayfa.class);
                             startActivity(intent);
+                            progressDialog.setMessage("Giriş Yapılıyor");
+                            progressDialog.show();
                         }
                     }
                 }).addOnFailureListener(this, new OnFailureListener() {
@@ -68,9 +74,9 @@ public class Login extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
 
             }
-        });
 
-    }
+        });
+     }
     @Override
     protected void onStart() {
         super.onStart();

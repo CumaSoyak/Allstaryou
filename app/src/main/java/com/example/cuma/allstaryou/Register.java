@@ -1,11 +1,13 @@
 package com.example.cuma.allstaryou;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,6 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Register extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+
+    private ProgressDialog progressDialog;
+
     EditText kanaladiText;
     EditText emailText;
     EditText parolaText;
@@ -28,6 +33,8 @@ public class Register extends AppCompatActivity {
         kanaladiText=(EditText) findViewById(R.id.kanaladitext);
         emailText=(EditText) findViewById(R.id.emailtext);
         parolaText=(EditText) findViewById(R.id.parolatext);
+
+        progressDialog=new ProgressDialog(this);
 
         mAuth =FirebaseAuth.getInstance();
 
@@ -56,6 +63,8 @@ public class Register extends AppCompatActivity {
                             Intent intent=new Intent(getApplicationContext(),anasayfa.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),"Kulanıcı oluşturuldu",Toast.LENGTH_SHORT).show();
+                            progressDialog.setMessage("Kullanıcı Oluşturuluyor");
+                            progressDialog.show();
                         }
                     }
                 }).addOnFailureListener(this, new OnFailureListener() {
@@ -66,5 +75,6 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
+
     }
 }
