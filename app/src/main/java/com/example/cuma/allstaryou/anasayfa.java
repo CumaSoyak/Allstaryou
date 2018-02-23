@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 public class anasayfa extends AppCompatActivity {
 
-    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -50,9 +49,9 @@ public class anasayfa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anasayfa);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
         setTitle("Fragment One"); //this will set title of Action Bar
         videoFragment fragment1 = new videoFragment();
         FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();

@@ -65,14 +65,13 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Intent intent=new Intent(getApplicationContext(),anasayfa.class);
                             startActivity(intent);
-                            progressDialog.setMessage("Giriş Yapılıyor");
-                            progressDialog.show();
+
                         }
                     }
                 }).addOnFailureListener(this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-
+                Toast.makeText(getApplicationContext(),e.getLocalizedMessage().toString(),Toast.LENGTH_SHORT).show();
             }
 
         });

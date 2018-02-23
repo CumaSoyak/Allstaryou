@@ -15,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "563752909910-pli2uirofvqt7f1vsfguiod9ev20drgr.apps.googleusercontent.com",
+          "client_id": "563752909910-ba3a8gjtftvljq7gk749t4n53mefc1kl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.cuma.allstaryou",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "563752909910-ae6e5bde3dv1o6cf20m96b1o5n4ed7ov.apps.googleusercontent.com",
+          "client_id": "563752909910-r7hisva7p669ls72ftndhdlnc6g3ffib.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZOEi_ajg_dpLFGFBfjOQpPRqw8t6fnKk"
+          "current_key": "AIzaSyDokYCu87DXFvZCxAb1a5zsIzcstnD7_pc"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "563752909910-ae6e5bde3dv1o6cf20m96b1o5n4ed7ov.apps.googleusercontent.com",
+              "client_id": "563752909910-r7hisva7p669ls72ftndhdlnc6g3ffib.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
